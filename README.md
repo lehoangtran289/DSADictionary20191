@@ -19,7 +19,8 @@ If gtk3+ stuff werent installed
 
 
 So how to compile?
-1. Replace 'libbt.a' with your 'libbt.a' 
+1. Extract btree library and find 'libbt.a' in bt-5.0.0/lib 
+   Replace 'libbt.a' with your 'libbt.a' 
 
 2. Create dictionary db from demo3.c
 >> gcc demo3.c libbt.a -w
