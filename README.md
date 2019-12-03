@@ -1,4 +1,6 @@
-# -CAdvanced-Dictionary-
+# -CAdvanced Dictionary ver1-
+
+(bugs and segmentation faults are inevitable :D )
 
 If gtk3+ stuff werent installed 
 >> sudo apt-get install libgtk3.0-dev
@@ -17,11 +19,13 @@ If gtk3+ stuff werent installed
 
 
 So how to compile?
-1. Create dictionary db from demo3.c
+1. Replace 'libbt.a' with your 'libbt.a' 
+
+2. Create dictionary db from demo3.c
 >> gcc demo3.c libbt.a -w
 
-2. Compile maindemo.c 
+3. Compile maindemo.c 
 >> gcc `pkg-config --cflags gtk+-3.0` -o dictionary maindemo.c `pkg-config --libs gtk+-3.0` -w libbt.a -rdynamic
 
-3. Run dictionary
+4. Run dictionary
 >> ./dictionary
