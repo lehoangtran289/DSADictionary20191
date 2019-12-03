@@ -2,11 +2,17 @@
 
 If gtk3+ stuff werent installed 
 >> sudo apt-get install libgtk3.0-dev
+
 >> sudo apt-get install gnome-core-devel 
+
 >> sudo apt-get install pkg-config
+
 >> sudo apt-get install devhelp
+
 >> sudo apt-get install libglib2.0-doc libgtk2.0-doc
+
 >> sudo apt-get install glade libglade2-dev 
+
 >> sudo apt-get install glade
 
 
