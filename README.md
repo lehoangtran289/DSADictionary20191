@@ -30,3 +30,5 @@ So how to compile?
 
 4. Run dictionary
 >> ./dictionary
+
+OR you could simply run ./rundict.sh
