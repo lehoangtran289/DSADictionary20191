@@ -73,7 +73,7 @@ int readfromfile (FILE *fin, BTA *dict, BTA *sdex) {
     int check, i = 0;
     char value[] = "Nghia cua tu ";
 
-    fin = fopen("/usr/share/dict/words","r");
+    fin = fopen("dict.txt","r");
     if(fin == NULL){
         printf("Can not open file to read\n");
         return -1;
