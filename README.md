@@ -32,4 +32,4 @@ If gtk3+ stuff werent installed
 ## 4. Run dictionary
 >> ./dictionary
 
-## OR you could simply run ./rundict.sh
+OR you could simply run ./rundict.sh
