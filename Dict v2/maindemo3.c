@@ -18,17 +18,19 @@ GtkWidget   *thongbao;
 
 void on_add_clicked(GtkButton *button, Widgets *w) {
     dict = btopn("dictionary.db", 0, 0);
-    gchar *input;
+    gchar *input, *val;
+    GtkTextIter start, end;
     GtkTextBuffer *textview;
     textview = gtk_text_view_get_buffer(GTK_TEXT_VIEW(w->textview));
     input = gtk_entry_get_text(GTK_ENTRY(w->searchentry));
 
+    gtk_text_buffer_get_bounds (textview, &start, &end);
+    val = gtk_text_buffer_get_text(textview, &start, &end , FALSE);
+
     int size;
     char search[1000];
-    char value[100000] = "Nghia cua tu ";
     if (btsel(dict, input, search, 100000, &size) != 0) {
-        strcat(value, input);
-        btins(dict, input, value, strlen(value) + 1);  
+        btins(dict, input, val, strlen(val) + 1);  
         gtk_label_set_text(thongbao, "word added!");
         gtk_text_buffer_set_text(textview, "", -1);
     } else {
