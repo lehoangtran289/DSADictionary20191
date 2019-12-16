@@ -26,6 +26,7 @@ If gtk3+ stuff werent installed
    Replace `libbt.a` with your `libbt.a` 
 
 ### 2. Create dictionary db from demo31.c
+Note: This includes removing used databases
 >> ./createdict.sh
 
 ### 3. Run dictionary
