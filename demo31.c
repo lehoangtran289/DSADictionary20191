@@ -191,39 +191,39 @@ int main() {
   	readfromfile(fin, dict, sdex); //read from file to btree dictionary.db and dsoundex.db
 
     // MENU
-  // 	int choice;
-		// printf("\tMENU\n");
-		// printf("1. Add\n");
-		// printf("2. Search\n");
-		// printf("3. Delete\n");
-		// printf("4. Exit\n");
+  	// int choice;
+	// 	printf("\tMENU\n");
+	// 	printf("1. Add\n");
+	// 	printf("2. Search\n");
+	// 	printf("3. Delete\n");
+	// 	printf("4. Exit\n");
 
-		// do {
-		// 	printf("\nInput a choice: ");
-		// 	scanf("%d", &choice);
+	// 	do {
+	// 		printf("\nInput a choice: ");
+	// 		scanf("%d", &choice);
 
-		// 	switch(choice){
-		// 		case 1: 
-		// 			Add(dict);
-		// 			break;
+	// 		switch(choice){
+	// 			case 1: 
+	// 				Add(dict);
+	// 				break;
 
-		// 		case 2: 
-		// 			Search(dict, sdex);
-		// 			break;
+	// 			case 2: 
+	// 				Search(dict, sdex);
+	// 				break;
 
-		// 		case 3: 
-		// 			Delete(dict, sdex);
-		// 			break;
+	// 			case 3: 
+	// 				Delete(dict, sdex);
+	// 				break;
 
-		// 		case 4:
-		// 			printf("Program closing...\n");
-		// 			break;
+	// 			case 4:
+	// 				printf("Program closing...\n");
+	// 				break;
 
-		// 		default:
-  //               	printf("Invalid task Try again!\n\n");
-  //               	break;
-		// 	}
-		// }	while (choice != 4);
+	// 			default:
+    //             	printf("Invalid task Try again!\n\n");
+    //             	break;
+	// 		}
+	// 	}	while (choice != 4);
 
   	btcls(dict);
     btcls(sdex);

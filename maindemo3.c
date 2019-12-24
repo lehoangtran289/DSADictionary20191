@@ -302,12 +302,8 @@ void on_searchentry_activate(GtkButton *button, Widgets *w) {
 }
 
 int main(int argc, char *argv[]) {; 
-    // char d[] = "dictionary.db";
-    // char s[] = "dictionarySoundex.db";
 	btinit();
 
-	// BTA *dict = btopn(d, 0, 0);
-    // sndex = btopn(s, 0, 0);
     GtkWidget       *window;
     GtkBuilder      *builder;
     GError          *error = NULL;
@@ -333,8 +329,6 @@ int main(int argc, char *argv[]) {;
 
     gtk_main ();
 
-    //btcls(dict);
-    //btcls(sndex);
     printf("Closed!\n");
     return 0;
 }
